@@ -26,6 +26,7 @@ class  b1 extends a1
 	void display()
 	{
 		System.out.println("displaying");
+		System.out.println();
 	}
 }
 
