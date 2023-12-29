@@ -87,18 +87,24 @@ public class Inheritance1 {
 		d.bark();
 		d.eat();
 		d.accessVariablesOfParentClass();
-		Animal a= new Dog();
-		a.eat();
+		Animal a= new Dog();  
+		a.eat();    // As Eat method is static, so can not be overriden so Method of Animal class gets called. 
 	//	a.bark();   gives error. 
 		
 		
 		d.commonMethodInParentAndChild();
 		a.commonMethodInParentAndChild();    // Even with Animal type object output of child class gets printed. 
+		// Using polymorphism to call the overridden method
 
 		Cat c= new Cat();
 		c.commonMethodInParentAndChild();  // method overriding
 		d.commonMethodInParentAndChild();
 		a.commonMethodInParentAndChild(); 
+		
+		
+		Animal e= new Animal();
+		e.commonMethodInParentAndChild();
+		
 	}
 	
 	
